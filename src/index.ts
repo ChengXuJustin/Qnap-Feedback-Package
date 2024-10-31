@@ -1,0 +1,1 @@
+export { MainFeedback } from "./main"
