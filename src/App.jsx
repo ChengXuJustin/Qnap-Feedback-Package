@@ -4,7 +4,7 @@ import Feedback from './components/Feedback'
 import rating_text from './data/rating.json'
 
 
-function App() {
+const App = () => {
 
   return (
     

@@ -3,7 +3,7 @@ import OpenQuestion from './OpenQuestion'
 import Practicality from './Practicality'
 
 
-export function Feedback( { id, data } ){
+export function Feedback({ id, data }){
 
   const Feedback_id = () => {
     switch (id) {
