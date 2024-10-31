@@ -1,27 +1,29 @@
 import './App.css'
-// import Feedback from './components/Feedback'
 import Citation from './components/Citation'
-import Feedback_temp from './components/Feedback_temp'
+import Feedback from './components/Feedback'
 import rating_text from './data/rating.json'
 
 
 function App() {
 
   return (
-    <>
-      {/* <Feedback /> */}
+    
+    <div className='frame pd-frame bd-rd-frame-20 fh quesps'>
+
+      <h1 className='mb-20'>Rate Your Experience with </h1>
+
       <Citation />
 
-      <Feedback_temp 
+      <Feedback
         id="rating"
         data={rating_text}
       />
 
-      <Feedback_temp 
+      <Feedback
         id="openQues"
         data={{}}
       />
-    </>
+    </div>
   )
 }
 
