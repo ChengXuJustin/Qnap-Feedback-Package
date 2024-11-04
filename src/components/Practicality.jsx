@@ -9,12 +9,12 @@ const Practicality = ( {listings = []} ) => {
   ];
 
   const starRate = () => {
-    const [rating, setRating] = useState(null);
+    const [rating, setRating] = useState();
     const [hover, setHover] = useState(null);
 
     return (
       <div className='mb-10'>
-        <form action="" className=''>
+        <form action="" className='df'>
           {thumbArray.map(({icon: ThumbIcon, value}, index) => {
             return (
               <label
@@ -30,18 +30,22 @@ const Practicality = ( {listings = []} ) => {
                   onChange={() => setRating(value)}
                   className="hidden"
                 />
-                <ThumbIcon
-                  size={40}
-                  className={`
-                    transition-all duration-200 mg-r-20
-                    ${(hover===value && value===1 || rating===value)
-                      ? 'fill-thumbD' : 'default'}
-                    ${(hover === value || rating===value)
-                      ? 'scale-110 shadow-md' : ''}
-                    ${(hover===value && value===2 || rating===value)
-                      ? 'fill-thumbU' : 'default'}
-                  `}
-                />
+                <div className='df aln-tm-ct' style={{marginRight:'90px'}}>
+                  <ThumbIcon
+                    size={40}
+                    className={`
+                      transition-all duration-200 mg-r-20
+                      ${(hover===1 || rating===1) && value===1
+                        ? 'fill-thumbD' : 'default'}
+                      ${(hover === true)
+                        ? 'scale-110 shadow-md' : ''}
+                      ${(hover===2 || rating===2) && value===2
+                        ? 'fill-thumbU' : 'default'}
+                   
+                    `}
+                  />
+                  <h3>{(value===1) ? 'Not really' : 'Sure'}</h3>
+                </div>
               </label>
             )
           })}
