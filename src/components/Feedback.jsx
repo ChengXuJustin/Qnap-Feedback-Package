@@ -12,7 +12,7 @@ export function Feedback({ id, data }){
       case 'rating':
         return <Rating listings={data}/>
       case 'practicality':
-        return <Practicality />
+        return <Practicality listings={data}/>
     }
   }
 
@@ -20,3 +20,5 @@ export function Feedback({ id, data }){
     Feedback_id()
   )
 }
+
+export default Feedback

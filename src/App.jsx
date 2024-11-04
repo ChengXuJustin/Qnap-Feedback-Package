@@ -10,12 +10,17 @@ const App = () => {
     
     <div className='frame pd-frame bd-rd-frame-20 fh quesps'>
 
-      <h1 className='mb-20'>Rate Your Experience with </h1>
+      <h1 className='mb-20'>Rate Your Experience with</h1>
 
       <Citation />
 
       <Feedback
         id="rating"
+        data={rating_text}
+      />
+
+      <Feedback 
+        id="practicality"
         data={rating_text}
       />
 

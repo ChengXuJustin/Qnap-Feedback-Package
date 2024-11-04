@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { FaStar } from 'react-icons/fa';
 
 const StarRate = () => {
@@ -8,7 +7,7 @@ const StarRate = () => {
   return (
     <div className='mb-10'>
       <form action="" className=''>
-        {[...Array(5)].map((_, index) => {
+        {[...Array(3)].map((_, index) => {
           const currentRate = index + 1;
           
           return (

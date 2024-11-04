@@ -80,6 +80,10 @@
   margin-right: 10px;
 }
 
+.mg-r-20{
+  margin-right: 20px;
+}
+
 .mb-10{
   margin-bottom: 10px;
 }
@@ -132,8 +136,12 @@
   color: #f1f1f1;
 }
 
-.fill-Star{
+.fill-Star, .fill-thumbU{
   color: #ffe100;
+}
+
+.fill-thumbD{
+  color: #00eeff;
 }
 
 .shadow-md{
