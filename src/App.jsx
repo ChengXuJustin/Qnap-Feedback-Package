@@ -22,17 +22,15 @@ const App = () => {
   return (
     <div>
 
-      {/* ==== Right Popup ====*/}
+      {/* ==== Right Popup Version1 ==== */}
+      {/* <Right_Pop_1 data={rating_text} /> */}
 
-      {/* Type 1 */}
-      <Right_Pop_1 data={rating_text} />
-
-      {/* Type 2 */}
-      {/* <Right_Pop_2 /> */}
+      {/* ==== Right Popup Version2 ==== */}
+      {/* <Right_Pop_2 data={rating_text} /> */}
 
 
       {/*==== Wizard ====*/}
-      {/* <div
+      <div
         className='wizardFrame'
         style={{
           backgroundImage:'url(https://live.staticflickr.com/65535/54118311701_628c95ca1b_c.jpg)',
@@ -40,7 +38,7 @@ const App = () => {
           backgroundSize:'contain'
         }}>
         <Wizard data={wizard_text}/>
-      </div> */}
+      </div>
 
     </div>
     

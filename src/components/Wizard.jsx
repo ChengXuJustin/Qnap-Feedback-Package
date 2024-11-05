@@ -1,7 +1,14 @@
+import { useState } from 'react';
 import Feedback from './Feedback'
 import { FaTelegramPlane, FaWpforms } from "react-icons/fa";
 
 const Wizard = ({ data = [] }) => {
+
+  const [popActive, setPopActive] = useState(true)
+
+  const closePop = (popActive) => {
+    setPopActive(!popActive)
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -10,7 +17,12 @@ const Wizard = ({ data = [] }) => {
   }
 
   return (
-      <div className='fh frameWz pd-frame quesps'>
+      <div className={`fh frameWz pd-frame quesps ${popActive ? '' : 'dn'}`}>
+
+        <li 
+          className='closeBtn'
+          onClick={() => {closePop(popActive)}}  
+        >X</li>
 
         <form action="" onSubmit={handleSubmit}>
 

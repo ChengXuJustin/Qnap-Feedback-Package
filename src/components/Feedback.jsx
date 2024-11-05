@@ -19,7 +19,9 @@ export function Feedback({ id, data }){
   }
 
   return (
-    Feedback_id()
+    <div style={{marginBottom:'60px'}}>
+      {Feedback_id()}
+    </div>
   )
 }
 

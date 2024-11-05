@@ -65,7 +65,7 @@ const Practicality = ( {listings = []} ) => {
 
     return (
         <div key={index} className='mb-20'>
-            <h2 className='mb-10'>{item.title}</h2>
+            <h3 className='mb-10'>{item.title}</h3>
             {renderParagraph}
         </div>
     )

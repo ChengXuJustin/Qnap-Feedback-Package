@@ -1,6 +1,6 @@
 import pract_text from '../data/practicality.json'
 import Feedback from './Feedback'
-import { FaTelegramPlane } from "react-icons/fa";
+import { FaTelegramPlane, FaWpforms } from "react-icons/fa";
 
 
 const Right_Pop_1 = ({ data = [] }) => {
@@ -16,7 +16,10 @@ const Right_Pop_1 = ({ data = [] }) => {
     <div className='frameR pd-frame bd-rd-frame-20 fh quesps of-y-scl'>
       <form action="" onSubmit={handleSubmit}>
 
-        <h1 className='mb-30' style={{fontSize:'40px'}}>How's Your Experience?</h1>
+        <li className='df aln-tm-ct mb-30'>
+          <FaWpforms size={36} className='mg-r-10'/>
+          <h1>意見回饋</h1>
+        </li>
           
         <div>
           <Feedback
