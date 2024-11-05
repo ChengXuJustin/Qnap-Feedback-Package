@@ -30,7 +30,7 @@ const Rating = ( {listings = []} ) => {
                 <FaStar
                   size={40}
                   className={`
-                    transition-all duration-200
+                    transition-all duration-200 mg-r-10
                     ${(hover || rating) >= currentRate 
                       ? 'fill-Star' : 'default'}
                     ${hover === currentRate 
@@ -58,7 +58,7 @@ const Rating = ( {listings = []} ) => {
 
     return (
         <div key={index} className='mb-20'>
-            <h2 className='mb-10'>{index+1}. {item.title}</h2>
+            <h2 className='mb-10'>{item.title}</h2>
             {renderParagraph}
         </div>
     )

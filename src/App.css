@@ -23,8 +23,8 @@
 
 .frame{
   width: 40%;
-  box-shadow: -5px 0px 15px rgb(84, 84, 84);
-  outline: 1px solid rgb(129, 129, 129);
+  box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .method-hover-bg:hover{
@@ -84,6 +84,10 @@
   margin-right: 20px;
 }
 
+.mg-r-30{
+  margin-right: 30px;
+}
+
 .mb-10{
   margin-bottom: 10px;
 }
@@ -130,6 +134,7 @@
 
 .hidden{
   opacity: 0;
+  display: none;
 }
 
 .default{
@@ -141,7 +146,7 @@
 }
 
 .fill-thumbD{
-  color: #00b1bd;
+  color: #007e87;
 }
 
 .shadow-md{
@@ -160,4 +165,8 @@
   background-color: #000476;
   color: #f1f1f1;
   align-self: start;
+}
+
+.of-y-scl{
+  overflow-y: scroll;
 }

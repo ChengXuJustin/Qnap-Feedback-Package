@@ -32,7 +32,7 @@ const Practicality = ( {listings = []} ) => {
                 />
                 <div className='df aln-tm-ct' style={{marginRight:'90px'}}>
                   <ThumbIcon
-                    size={40}
+                    size={32}
                     className={`
                       transition-all duration-200 mg-r-20
                       ${(hover===1 || rating===1) && value===1
@@ -67,7 +67,7 @@ const Practicality = ( {listings = []} ) => {
 
     return (
         <div key={index} className='mb-20'>
-            <h2 className='mb-10'>{index+1}. {item.title}</h2>
+            <h2 className='mb-10'>{item.title}</h2>
             {renderParagraph}
         </div>
     )
