@@ -13,8 +13,7 @@ const Practicality = ( {listings = []} ) => {
     const [hover, setHover] = useState(null);
 
     return (
-      <div className='mb-10'>
-        <form action="" className='df'>
+      <div className='mb-10 df'>
           {thumbArray.map(({icon: ThumbIcon, value}, index) => {
             return (
               <label
@@ -49,7 +48,6 @@ const Practicality = ( {listings = []} ) => {
               </label>
             )
           })}
-        </form>
       </div>
     );
   }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Feedback_2 = () => {
+const Right_Pop_2 = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Feedback_2 = () => {
   )
 }
 
-export default Feedback_2
+export default Right_Pop_2
