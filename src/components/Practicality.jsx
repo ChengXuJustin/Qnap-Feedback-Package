@@ -37,7 +37,7 @@ const Practicality = ( {listings = []} ) => {
                       transition-all duration-200 mg-r-20
                       ${(hover===1 || rating===1) && value===1
                         ? 'fill-thumbD' : 'default'}
-                      ${(hover === true)
+                      ${(hover)
                         ? 'scale-110 shadow-md' : ''}
                       ${(hover===2 || rating===2) && value===2
                         ? 'fill-thumbU' : 'default'}
