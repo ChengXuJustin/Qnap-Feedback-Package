@@ -9,7 +9,7 @@ const Rating = ( {listings = []} ) => {
 
     return (
       <div className='mb-10'>
-        <form action="" className=''>
+        {/* <form action="" className=''> */}
           {[...Array(5)].map((_, index) => {
             const currentRate = index + 1;
             
@@ -40,7 +40,7 @@ const Rating = ( {listings = []} ) => {
               </label>
             )
           })}
-        </form>
+        {/* </form> */}
       </div>
     );
   }

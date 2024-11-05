@@ -37,12 +37,12 @@ const OpenQuestion = () => {
   return (
     <div>
       <h2 className='mb-10'>您期待我們可以如何進步 提升您的體驗?</h2>
-      <form action="" onSubmit={handleSubmit}>
         <textarea
           name="open-question"
           id=""
           placeholder={open_placeholder}
           className='fw textAreah bd-rd-5 pd-10'
+          value={text}
           onChange={(e) => setText(e.target.value)}
         />
         <div>
@@ -66,12 +66,7 @@ const OpenQuestion = () => {
             
           </ul>
         </div>
-        <div className='df fw jc-fe'>
-          <button className='sm-btn df aln-tm-ct jc-sb'>
-            Submit<FaTelegramPlane className='mg-l-10'/>
-          </button>
-        </div>
-      </form>
+ 
     </div>
   )
 }

@@ -1,13 +1,12 @@
-import rating_text from '../data/rating.json'
 import pract_text from '../data/practicality.json'
 import Feedback from './Feedback'
 
-const Feedback_1 = () => {
+const Feedback_1 = ({ data = [] }) => {
   return (
     <div>
         <Feedback
             id="rating"
-            data={rating_text}
+            data={data}
         />
 
         <Feedback 

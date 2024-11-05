@@ -5,6 +5,8 @@ import Practicality from './Practicality'
 
 export function Feedback({ id, data }){
 
+  
+
   const Feedback_id = () => {
     switch (id) {
       case 'openQues':
