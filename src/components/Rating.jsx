@@ -23,7 +23,7 @@ const Rating = ( {listings = []} ) => {
                   type="radio"
                   name="rate"
                   value={currentRate}
-                  onChange={() => setRating(currentRate)}
+                  onChange={() => {setRating(currentRate)}}
                   className="hidden"
                 />
                 <FaStar
@@ -48,8 +48,17 @@ const Rating = ( {listings = []} ) => {
     const renderParagraph = item.description.map((question, paraDex) => {
         return (
           <div key={paraDex}>
-            <p className='mb-10'>{question}</p>
-            {starRate()}
+            <p className='mg-b-40'>{question}</p>
+            <div className='df aln-tm-ct'>
+              <button className='mg-r-50 unUsedBtn'>還沒用過</button>
+              <div className='df fd-c'>
+                {starRate()}
+                <ul className='df jc-sb' style={{width:'250px'}}>
+                  <p>不好用</p>
+                  <p>超級好用</p>
+                </ul>
+              </div>
+            </div>
           </div>
         )
     })

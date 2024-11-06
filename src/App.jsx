@@ -6,7 +6,7 @@ import Wizard from './components/Wizard'
 import rating_text from './data/rating.json'
 import wizard_text from './data/wizard.json'
 import Right_Pop_1 from './components/Right_Pop_1'
-
+import Appreciation from './components/Appreciation'
 
 
 const App = () => {
@@ -23,14 +23,13 @@ const App = () => {
     <div>
 
       {/* ==== Right Popup Version1 ==== */}
-      {/* <Right_Pop_1 data={rating_text} /> */}
+      <Right_Pop_1 data={rating_text} />
 
       {/* ==== Right Popup Version2 ==== */}
       {/* <Right_Pop_2 data={rating_text} /> */}
 
-
-      {/*==== Wizard ====*/}
-      <div
+      {/* ==== Wizard ==== */}
+      {/* <div
         className='wizardFrame'
         style={{
           backgroundImage:'url(https://live.staticflickr.com/65535/54118311701_628c95ca1b_c.jpg)',
@@ -38,7 +37,10 @@ const App = () => {
           backgroundSize:'contain'
         }}>
         <Wizard data={wizard_text}/>
-      </div>
+      </div> */}
+
+      {/* ==== Appreciation ==== */}
+      {/* <Appreciation /> */}
 
     </div>
     

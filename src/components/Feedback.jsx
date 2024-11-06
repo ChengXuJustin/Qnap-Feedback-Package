@@ -1,6 +1,7 @@
 import Rating from './Rating'
 import OpenQuestion from './OpenQuestion'
 import Practicality from './Practicality'
+import Reccommendation from './Reccommendation'
 
 
 export function Feedback({ id, data }){
@@ -15,6 +16,8 @@ export function Feedback({ id, data }){
         return <Rating listings={data}/>
       case 'practicality':
         return <Practicality listings={data}/>
+      case 'reccomendation':
+        return <Reccommendation listings={data}/>
     }
   }
 

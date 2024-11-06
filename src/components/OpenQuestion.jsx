@@ -36,7 +36,7 @@ const OpenQuestion = () => {
 
   return (
     <div>
-      <h3 className='mb-10'>您期待我們可以如何進步 提升您的體驗?</h3>
+      <h3 className='mb-10'>您期待我們如何進步可以提升您的體驗?</h3>
         <textarea
           name="open-question"
           id=""

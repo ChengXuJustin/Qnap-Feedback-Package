@@ -10,6 +10,14 @@
   margin: 0;
 }
 
+.trans-3{
+  transition: 1s 0.3s;
+}
+
+.ps-rt{
+  position: relative;
+}
+
 .closeBtn{
   font-weight: bold;
   font-size: 26px;
@@ -18,6 +26,23 @@
   right: 30px;
   cursor: pointer;
   padding: 10px;
+}
+
+.unUsedBtn{
+  position:static;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  align-self: flex-start;
+}
+
+.unUsedBtn:hover{
+  /* color: #f1f1f1; */
+  background-color: #f1f1f1;
+}
+
+.wp-r{
+  transform: translateX(100%);
+  transition:0.3s ease-out;
 }
 
 .textAreah{
@@ -35,6 +60,19 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.appre{
+  width: 40%;
+  height: 30%;
+  box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1);
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
 }
 
 .quesps{
@@ -129,6 +167,10 @@
   margin-right: 30px;
 }
 
+.mg-r-50{
+  margin-right: 50px;
+}
+
 .mb-10{
   margin-bottom: 10px;
 }
@@ -139,6 +181,10 @@
 
 .mb-30{
   margin-bottom: 30px;
+}
+
+.mg-b-40{
+  margin-bottom: 40px;
 }
 
 .mg-l-10{
@@ -153,8 +199,16 @@
   display: none;
 }
 
+.db{
+  display: block;
+}
+
 .df{
   display: flex;
+}
+
+.fd-c{
+  flex-direction: column;
 }
 
 .jc-fe{

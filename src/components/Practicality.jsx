@@ -43,7 +43,7 @@ const Practicality = ( {listings = []} ) => {
                    
                     `}
                   />
-                  <h3>{(value===1) ? 'Not really' : 'Sure'}</h3>
+                  <h3>{(value===1) ? '不實用' : '很實用'}</h3>
                 </div>
               </label>
             )
@@ -65,7 +65,7 @@ const Practicality = ( {listings = []} ) => {
 
     return (
         <div key={index} className='mb-20'>
-            <h3 className='mb-10'>{item.title}</h3>
+            <h3 className='mb-20'>{item.title}</h3>
             {renderParagraph}
         </div>
     )

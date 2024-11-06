@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "title": "請問您認為Qsirch的RAG功能實用不實用",
+        "title": "您認為Qsirch的RAG功能是一個非常實用的ＡＩ助理嗎？",
         "description": [
-            "RAG提供用戶提問NAS文件的資訊，系統會根據文件給回覆"
+            ""
         ]
     }
 ]
