@@ -9,6 +9,8 @@ const OpenQuestion = () => {
   const [method, setMethod] = useState('')
   const [selectMethod, setSelectedMethod] = useState('')
 
+  const Max_Length = 1000;
+
   const feedbackMethod = [
     {
       id: "text",
@@ -34,6 +36,12 @@ const OpenQuestion = () => {
     console.log(blog);
   }
 
+  const handleTextChange = (e) =>{
+    const newText = e.target.value;
+    if(newText.length <= Max_Length)
+        setText(newText);
+  }
+
   return (
     <div>
       <h3 className='mb-10'>您期待我們如何進步可以提升您的體驗?</h3>
@@ -44,7 +52,9 @@ const OpenQuestion = () => {
           className='fw textAreah bd-rd-5 pd-10'
           value={text}
           onChange={(e) => setText(e.target.value)}
+          maxLength={Max_Length}
         />
+        <p style={{color: text.length===1000 ? 'red' : ''}}>{text.length}/1000</p>
         <div>
           <ul className='df'>
             {feedbackMethod.map((methodItem, index) => {
