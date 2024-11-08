@@ -196,6 +196,10 @@
   margin-bottom: 40px;
 }
 
+.mg-b-50{
+  margin-bottom: 50px;
+}
+
 .mg-l-10{
   margin-left: 10px;
 }
@@ -218,6 +222,10 @@
 
 .fd-c{
   flex-direction: column;
+}
+
+.jc-ct{
+  justify-content: center;
 }
 
 .jc-fe{

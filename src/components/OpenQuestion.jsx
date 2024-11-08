@@ -71,9 +71,9 @@ const OpenQuestion = () => {
         )
       case 'audio':
         return(
-          <>
-            
-          </>
+          <div className='mg-b-50 df jc-ct'>
+            <FaMicrophoneAlt size={80}/>
+          </div>
         )
       case 'image':
         return(
