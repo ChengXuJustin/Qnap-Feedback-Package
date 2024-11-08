@@ -62,9 +62,9 @@ const Wizard = ({ data = [] }) => {
 
       </div>
 
-      {/* <div className={`trans-3 ${popAppr ? 'dn' : 'df'}`}>
-      <Appreciation />
-      </div> */}
+      <div className={`trans-3 ${popAppr ? 'dn' : 'df'}`}>
+        <Appreciation />
+      </div>
 
 
     </div>

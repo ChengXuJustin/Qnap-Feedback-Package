@@ -94,8 +94,17 @@
   outline: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.method-hover-bg:hover{
+.method-hover:hover{
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.method-active{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.reachMaxAnime{
+  animation: reachMax 0.4s ease-in-out 0s 1 both backwards;
+  background-color: red;
 }
 
 .fh{
@@ -262,4 +271,25 @@
 
 .of-y-scl{
   overflow-y: scroll;
+}
+
+.rz-v{
+  resize: vertical;
+}
+
+@keyframes reachMax{
+  0%{
+  }
+  25%{
+    transform: translateX(-10%);
+  }
+  50%{
+    transform: translateX(0%);
+  }
+  75%{
+    transform: translateX(10%);
+  }
+  100%{
+    transform: translateX(00%);
+  }
 }
