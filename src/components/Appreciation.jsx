@@ -1,7 +1,7 @@
 
 const Appreciation = () => {
   return (
-    <div className='appre wizardFrame pd-frame bd-rd-5 df'>
+    <div className='appre wizardFrame pd-frame bd-rd-5 df df-c'>
         <img 
             src="https://live.staticflickr.com/65535/54120553630_52c5a33eae_c.jpg" alt="" 
             style={{width:'30%'}}

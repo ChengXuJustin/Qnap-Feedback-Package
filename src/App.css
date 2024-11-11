@@ -108,7 +108,9 @@
 }
 
 .pracThumb{
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 16px 30px;
+  border-radius: 20px;
 }
 
 /* Width and Height */
@@ -265,6 +267,10 @@
 
 .default{
   color: #f1f1f1;
+}
+
+.thumbDefault{
+  color: rgba(0, 0, 0, 0.1);
 }
 
 .fill-Star, .fill-thumbU{

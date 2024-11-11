@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { FaStar, FaRegThumbsUp, FaRegThumbsDown} from 'react-icons/fa';
+import { FaStar, FaThumbsUp, FaThumbsDown} from 'react-icons/fa';
 
 const Practicality = ( {listings = []} ) => {
 
   const thumbArray = [
-    { icon: FaRegThumbsDown, value: 1 },
-    { icon: FaRegThumbsUp, value: 2 }
+    { icon: FaThumbsDown, value: 1 },
+    { icon: FaThumbsUp, value: 2 }
   ];
 
   const starRate = () => {
@@ -31,15 +31,15 @@ const Practicality = ( {listings = []} ) => {
                 />
                 <div className='df aln-tm-ct pracThumb' style={{marginRight:'90px'}}>
                   <ThumbIcon
-                    size={32}
+                    size={28}
                     className={`
                       transition-all duration-200 mg-r-20
                       ${(hover===1 || rating===1) && value===1
-                        ? 'fill-thumbD' : 'default'}
+                        ? 'fill-thumbD' : 'thumbDefault'}
                       ${(hover)
                         ? 'scale-110 shadow-md' : ''}
                       ${(hover===2 || rating===2) && value===2
-                        ? 'fill-thumbU' : 'default'}
+                        ? 'fill-thumbU' : 'thumbDefault'}
                    
                     `}
                   />
