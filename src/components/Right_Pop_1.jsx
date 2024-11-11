@@ -29,11 +29,6 @@ const Right_Pop_1 = ({ data = [] }) => {
     <div>
       <div className={`frameR pd-frame bd-rd-frame-20 fh quesps of-y-scl ${(popActive && popAppr) ? '' : 'wp-r'}`}>
   
-          <li 
-            className='closeBtn'
-            onClick={() => {closePop(popActive)}}  
-          >X</li>
-  
         <form action="" onSubmit={handleSubmit}>
   
           <li className='df aln-tm-ct mb-30'>
@@ -59,14 +54,23 @@ const Right_Pop_1 = ({ data = [] }) => {
           </div>
   
   
-          <div className='df fw jc-fe'>
+          <div className='df jc-fe'>
             <button 
-              className={`sm-btn df aln-tm-ct jc-sb`}
+              className='sm-btn df aln-tm-ct jc-ct mg-r-30'
               onClick={() => {openAppr(popAppr)}}
             >
               Submit<FaTelegramPlane className='mg-l-10'/>
             </button>
+
+            <button 
+              className={`sm-btnCancel df aln-tm-ct jc-ct`}
+              onClick={() => {closePop(popActive)}} 
+            >
+              Cancel
+            </button>
           </div>
+
+          
         </form>
             
   

@@ -83,7 +83,7 @@
 }
 
 .frameR{
-  width: 40%;
+  width: 30%;
   box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.1);
   outline: 1px solid rgba(0, 0, 0, 0.1);
 }
@@ -156,6 +156,8 @@
   padding: 20px;
 }
 
+/* Margin */
+
 .mg-ct{
   margin: 0 auto;
 }
@@ -207,6 +209,8 @@
 .mg-ct{
   margin: auto auto;
 }
+
+/* Display */
 
 .dn{
   display: none;
@@ -275,6 +279,20 @@
 
 .scale-110{
   transform: scale(1.1);
+}
+
+.sm-btn{
+  width: 160px;
+  background-color: #000476;
+  color: #f1f1f1;
+  align-self: start;
+}
+
+.sm-btnCancel{
+  width: 160px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #6c6c6c;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .of-y-scl{

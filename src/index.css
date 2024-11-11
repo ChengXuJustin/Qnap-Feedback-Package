@@ -37,17 +37,12 @@ h1 {
 }
 
 button {
-  border-radius: 4px;
-  border: 1px solid rgb(0, 0, 0);
-  padding: 0.6em 1.2em;
+  border-radius: 5px;
+  padding: 1em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   cursor: pointer;
-  color: #000000;
-  position: absolute;
-  bottom: 50px;
-  right: 40px;
 }
 
 button:hover {
