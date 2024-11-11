@@ -8,7 +8,7 @@ const Rating = ( {listings = []} ) => {
     const [hover, setHover] = useState(null);
 
     return (
-      <div className='mb-10'>
+      <div className='mb-10 df jc-sb'>
           {[...Array(5)].map((_, index) => {
             const currentRate = index + 1;
             
@@ -27,7 +27,7 @@ const Rating = ( {listings = []} ) => {
                   className="hidden"
                 />
                 <FaStar
-                  size={40}
+                  size={75}
                   className={`
                     transition-all duration-200 mg-r-10
                     ${(hover || rating) >= currentRate 
@@ -49,13 +49,13 @@ const Rating = ( {listings = []} ) => {
         return (
           <div key={paraDex}>
             <p className='mg-b-40'>{question}</p>
-            <div className='df aln-tm-ct'>
-              <button className='mg-r-50 unUsedBtn'>還沒用過</button>
-              <div className='df fd-c'>
+            <div className='df aln-tm-c'>
+              <button className='unUsedBtn mg-r-30'>還沒用過</button>
+              <div className='df fd-c '>
                 {starRate()}
-                <ul className='df jc-sb' style={{width:'250px'}}>
-                  <p>不好用</p>
-                  <p>超級好用</p>
+                <ul className='fw df jc-sb' style={{textAlign:'center'}}>
+                  <p style={{width:'80px'}}>不好用</p>
+                  <p style={{width:'80px'}}>超級好用</p>
                 </ul>
               </div>
             </div>

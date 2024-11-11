@@ -29,7 +29,7 @@ const Practicality = ( {listings = []} ) => {
                   onChange={() => setRating(value)}
                   className="hidden"
                 />
-                <div className='df aln-tm-ct' style={{marginRight:'90px'}}>
+                <div className='df aln-tm-ct pracThumb' style={{marginRight:'90px'}}>
                   <ThumbIcon
                     size={32}
                     className={`
