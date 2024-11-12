@@ -12,21 +12,27 @@ import Appreciation from './components/Appreciation'
 const App = () => {
 
   const [text, setText] = useState('')
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const blog = {text}
-    console.log(blog);
-  }
+  const [functionClick, setFunctionClick] =useState (false)
 
   return (
     <div>
 
       {/* ==== Right Popup Version1 ==== */}
-      <Right_Pop_1 data={rating_text} />
+      {/* <Right_Pop_1 data={rating_text} /> */}
 
       {/* ==== Right Popup Version2 ==== */}
-      {/* <Right_Pop_2 data={rating_text} /> */}
+      <div>
+        <button 
+          style= {{position:'absolute', top:'50%', left:'50%'}}
+          onClick={()=>setFunctionClick(true)}
+        >
+          Click Me
+        </button>
+
+        <div className={`${functionClick ? 'db' : 'dn'}`}>
+          <Right_Pop_2 data={rating_text} />
+        </div>
+      </div>
 
       {/* ==== Wizard ==== */}
       {/* <div

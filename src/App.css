@@ -18,6 +18,13 @@
   position: relative;
 }
 
+.Btn{
+  position:static;
+  width: 180px;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+}
+
 .closeBtn{
   font-weight: bold;
   font-size: 26px;
@@ -108,7 +115,7 @@
 }
 
 .pracThumb{
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.03);
   padding: 16px 30px;
   border-radius: 20px;
 }
