@@ -51,7 +51,7 @@
   transform: translateX(100%);
   transition:0.3s ease-out;
 }
-
+ 
 .textAreah{
   height: 100px;
   line-height: 1.5;

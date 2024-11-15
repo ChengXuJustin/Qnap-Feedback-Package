@@ -16,12 +16,11 @@ const App = () => {
 
   return (
     <div>
-
       {/* ==== Right Popup Version1 ==== */}
-      {/* <Right_Pop_1 data={rating_text} /> */}
+      <Right_Pop_1 data={rating_text} />
 
       {/* ==== Right Popup Version2 ==== */}
-      <div>
+      {/* <div>
         <button 
           style= {{position:'absolute', top:'50%', left:'50%'}}
           onClick={()=>setFunctionClick(true)}
@@ -32,7 +31,7 @@ const App = () => {
         <div className={`${functionClick ? 'db' : 'dn'}`}>
           <Right_Pop_2 data={rating_text} />
         </div>
-      </div>
+      </div> */}
 
       {/* ==== Wizard ==== */}
       {/* <div
